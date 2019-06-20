@@ -23,7 +23,7 @@ class TabLink {
     // Add a class named "tabs-link-selected" to this link
     this.element.classList.add('tabs-link-selected');
     // Call the select method on the item associated with this link
-    
+    this.element.select();
   }
 }
 
@@ -36,7 +36,6 @@ class TabItem {
   select() {
     // Select all ".tabs-item" elements from the DOM
     const items = document.querySelectorAll('.tabs-item');
-
     // Remove the class "tabs-item-selected" from each element
     Array.from(items).forEach(function(item2){
       item2.classList.remove('tabs-item-selected');
